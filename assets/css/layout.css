@@ -34,6 +34,10 @@ input[placeholder], [placeholder], *[placeholder] {
 
 
 /* Helper classes */
+.hide{
+	display: none;
+}
+
 .spacer{
 	opacity: 0;
 }
@@ -124,6 +128,12 @@ section p:last-child{
     padding: 0;
 }
 
+#succes-message, #error-message{
+	font-size: 1.4em;
+	color: #fff;
+	text-align: center;
+}
+
 
 /* #Section Styles
 ================================================== */
@@ -159,13 +169,14 @@ section p:last-child{
 }
 
 #subscribe-form{
-	padding: 100px 50px;
+	padding: 100px 50px 0 50px;
 	display: inline-block;
 }
 
 #subscribe-form form{
-	text-align: center;
+	text-align: left;
 	padding: 0 50px;
+	margin-left: 11px;
 }
 
 #subscribe-form form input{
@@ -179,6 +190,14 @@ section p:last-child{
 	-webkit-border-radius: 2px;
 }
 
+#subscribe-form select{
+	padding: 9px;
+	font-size: 0.9em;
+	display: inline-block;
+	width: 220px;
+	height: 35px;
+	margin-bottom: 8px;
+}
 
 /* Default content sections */
 .content-dark, .content-light {
@@ -310,6 +329,15 @@ section p:last-child{
 			padding-left: 20px;
 		}
 
+		#subscribe-form form{
+			margin-left: 15px;
+		}
+
+		#subscribe-form select{
+			width: 190px;
+			font-size: 0.8em;
+		}
+
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -341,7 +369,11 @@ section p:last-child{
 
 		#subscribe-form h2{
 			margin-bottom: 15px;
+			font-size: 1.3em;
+			line-height: 1.3em;
 		}
+
+
 
 		.content-dark .wrapper-left, .content-light .wrapper-left{
 			padding-left: 50px;
@@ -431,11 +463,11 @@ section p:last-child{
 
 		#mobile-logo{
 			padding: 0;
-			margin-top: 20px;
+			margin-top: 15px;
 		}
 
 		#mobile-landscape-line, #mobile-portrait-line{
-			padding: 5px 0 0 0;
+			padding: 0 0 0 0;
 		}
 
 		#mobile-portrait-line{
@@ -458,6 +490,20 @@ section p:last-child{
 			margin-bottom: 12px;
 			width: 180px !important;
 		}
+
+		#subscribe-form form{
+			margin-left: 13px;
+			margin-bottom: 0;
+		}
+
+		#subscribe-form select{
+			width: 200px;
+		}
+
+		#succes-message{
+			margin-top: 40px;
+		}
+
 		
 	}
 
@@ -505,12 +551,14 @@ section p:last-child{
 			display: none;
 		}
 
-
 		#header{
 			height: 394px;
 		}
 		
-
+		#subscribe-form form{
+			text-align: center;
+			margin: 0;
+		}
 	}
 
 

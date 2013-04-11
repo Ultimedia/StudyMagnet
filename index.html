@@ -31,18 +31,15 @@
 	<script type="text/javascript" src="assets/js/retina.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
-
-
-
 	<script type="text/javascript" src="//use.typekit.net/dfd7rno.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="assets/img/favicon.ico">
-	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/img/apple-touch-icon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
 
 </head>
 <body>
@@ -78,9 +75,21 @@
 					<h2>We’re almost ready to launch subscribe and get notified!</h2>
 
 					<form>
+						<select id="university-select">
+    						<option value="" disabled selected>Your university</option>
+
+    						<!-- Add Universities here -->
+							<option>Cambridge</option>
+							<option>Oxford</option>
+							<option>King's College London</option>
+							<option>Imperial College London</option>
+							<option>University College London</option>
+						</select>
 						<input id="email-input" type="text" placeholder="Your email address"/>
 						<a id="subscribe-button" class="btn" href="javascript:;">Subscribe</a>
 					</form>
+					<span id="succes-message" class="hide">Thank you for subscribing.</span>
+					<span id="error-message" class="hide">There was an error processing your request, please try again later.</span>
 				</section>
 			</div>
 		</section>
